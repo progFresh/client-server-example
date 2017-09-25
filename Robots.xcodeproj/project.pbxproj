@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84F3A077B96A114A7E98AA85 /* Pods_Robots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F492AE322B799B3854343E0 /* Pods_Robots.framework */; };
 		EE937C081F7869AC004E8C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE937C071F7869AC004E8C48 /* Assets.xcassets */; };
 		EE937C0C1F786C74004E8C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE937C0A1F786C74004E8C48 /* LaunchScreen.storyboard */; };
 		EE937C0F1F786CF5004E8C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C0E1F786CF5004E8C48 /* AppDelegate.swift */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F492AE322B799B3854343E0 /* Pods_Robots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1FC0A0F093FE6E89AC09CE /* Pods-Robots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Robots/Pods-Robots.debug.xcconfig"; sourceTree = "<group>"; };
+		AD6F9C5729568D3F16D8AEEE /* Pods-Robots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots.release.xcconfig"; path = "Pods/Target Support Files/Pods-Robots/Pods-Robots.release.xcconfig"; sourceTree = "<group>"; };
 		EE937BEE1F786792004E8C48 /* Robots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE937C071F7869AC004E8C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		EE937C091F786C74004E8C48 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F3A077B96A114A7E98AA85 /* Pods_Robots.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2583032A183FF225A2CEEF4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F492AE322B799B3854343E0 /* Pods_Robots.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE937BE51F786792004E8C48 = {
 			isa = PBXGroup;
 			children = (
 				EE937BF01F786792004E8C48 /* Robots */,
 				EE937BEF1F786792004E8C48 /* Products */,
+				FB5CE1486A418262B23598A8 /* Pods */,
+				2583032A183FF225A2CEEF4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +151,15 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
+		FB5CE1486A418262B23598A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E1FC0A0F093FE6E89AC09CE /* Pods-Robots.debug.xcconfig */,
+				AD6F9C5729568D3F16D8AEEE /* Pods-Robots.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE937C001F786792004E8C48 /* Build configuration list for PBXNativeTarget "Robots" */;
 			buildPhases = (
+				618FED54C15B7E68A20AA32E /* [CP] Check Pods Manifest.lock */,
 				EE937BEA1F786792004E8C48 /* Sources */,
 				EE937BEB1F786792004E8C48 /* Frameworks */,
 				EE937BEC1F786792004E8C48 /* Resources */,
+				77B146C73EA2694297344868 /* [CP] Embed Pods Frameworks */,
+				75590360EA57F4EF92D058E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,6 +231,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		618FED54C15B7E68A20AA32E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75590360EA57F4EF92D058E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Robots/Pods-Robots-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77B146C73EA2694297344868 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Robots/Pods-Robots-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE937BEA1F786792004E8C48 /* Sources */ = {
@@ -315,6 +390,7 @@
 		};
 		EE937C011F786792004E8C48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E1FC0A0F093FE6E89AC09CE /* Pods-Robots.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -330,6 +406,7 @@
 		};
 		EE937C021F786792004E8C48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD6F9C5729568D3F16D8AEEE /* Pods-Robots.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
