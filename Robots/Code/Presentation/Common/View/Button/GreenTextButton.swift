@@ -10,11 +10,11 @@ import UIKit
 
 @IBDesignable
 final class GreenTextButton: ColoredTextButton {
-    override var normalBackgroundColor: UIColor { return Color.buttonGreen}
+    override var normalBackgroundColor: UIColor { return Color.errorButton}
     override var normalTitleColor: UIColor { return Color.white }
-    override var normalBorderColor: UIColor { return Color.buttonGreen }
+    override var normalBorderColor: UIColor { return Color.errorButton }
 
     override var highlightedBackgroundColor: UIColor { return Color.clear }
-    override var highlightedTitleColor: UIColor { return Color.buttonGreen }
-    override var highlightedBorderColor: UIColor { return Color.buttonGreen }
+    override var highlightedTitleColor: UIColor { return Color.errorButton }
+    override var highlightedBorderColor: UIColor { return Color.errorButton }
 }

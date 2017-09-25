@@ -13,7 +13,7 @@ protocol AppearanceInitializer {
 }
 
 final class AppearanceInitializerImpl: AppearanceInitializer {
-
+    
     // MARK: AppearanceInitializer
 
     func initAppearance() {
@@ -25,8 +25,8 @@ final class AppearanceInitializerImpl: AppearanceInitializer {
     private func initNavigationBarAppearance() {
         let appearance = UINavigationBar.appearance()
         appearance.isTranslucent = false
-        appearance.barTintColor = UIColor.red
-        appearance.tintColor = Color.white
-        appearance.titleTextAttributes = [NSForegroundColorAttributeName: Color.white]
+        appearance.barTintColor = Color.navigationBarTint
+        appearance.tintColor = Color.navigationTint
+        appearance.titleTextAttributes = [NSForegroundColorAttributeName: Color.navigationTint]
     }
 }
