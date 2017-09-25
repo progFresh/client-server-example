@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Constants.swift
 //  Robots
 //
 //  Created by Сергей Полозов on 25.09.17.
@@ -8,7 +8,4 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-}
-
+typealias Block = () -> Void

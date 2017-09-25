@@ -13,6 +13,23 @@
 		EE937C0F1F786CF5004E8C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C0E1F786CF5004E8C48 /* AppDelegate.swift */; };
 		EE937C131F786E4C004E8C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE937C121F786E4C004E8C48 /* Main.storyboard */; };
 		EE937C171F786E64004E8C48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C161F786E64004E8C48 /* ViewController.swift */; };
+		EE937C271F795EC9004E8C48 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C261F795EC9004E8C48 /* View.swift */; };
+		EE937C291F795F37004E8C48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C281F795F37004E8C48 /* Constants.swift */; };
+		EE937C321F79623D004E8C48 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C311F79623D004E8C48 /* Color.swift */; };
+		EE937C341F79635D004E8C48 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C331F79635D004E8C48 /* Font.swift */; };
+		EE937C3A1F796663004E8C48 /* ErrorViewLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C381F796663004E8C48 /* ErrorViewLabel.swift */; };
+		EE937C3B1F796663004E8C48 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C391F796663004E8C48 /* Label.swift */; };
+		EE937C3D1F796685004E8C48 /* ColoredTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C3C1F796685004E8C48 /* ColoredTextButton.swift */; };
+		EE937C401F796709004E8C48 /* UIImage+ResizableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C3F1F796709004E8C48 /* UIImage+ResizableImage.swift */; };
+		EE937C421F796765004E8C48 /* GreenTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C411F796765004E8C48 /* GreenTextButton.swift */; };
+		EED890481F79836400300AF9 /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890471F79836400300AF9 /* UIView+Autolayout.swift */; };
+		EED8904B1F799A4800300AF9 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8904A1F799A4800300AF9 /* Strings.swift */; };
+		EED890551F799E4500300AF9 /* RobotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890541F799E4500300AF9 /* RobotsView.swift */; };
+		EED890571F79A27F00300AF9 /* RobotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890561F79A27F00300AF9 /* RobotsViewController.swift */; };
+		EED890591F79A7DD00300AF9 /* AppearanceInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890581F79A7DD00300AF9 /* AppearanceInitializer.swift */; };
+		EED8905B1F79A8DE00300AF9 /* RobotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8905A1F79A8DE00300AF9 /* RobotView.swift */; };
+		EED8905D1F79A8F300300AF9 /* RobotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8905C1F79A8F300300AF9 /* RobotViewController.swift */; };
+		EED890601F79A9A800300AF9 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8905F1F79A9A800300AF9 /* SegueHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +43,23 @@
 		EE937C0E1F786CF5004E8C48 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Code/Application/AppDelegate.swift; sourceTree = "<group>"; };
 		EE937C121F786E4C004E8C48 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Code/Presentation/Main/Main.storyboard; sourceTree = "<group>"; };
 		EE937C161F786E64004E8C48 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Code/Presentation/Common/ViewController/ViewController.swift; sourceTree = "<group>"; };
+		EE937C261F795EC9004E8C48 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View.swift; path = Code/Presentation/Common/View/View.swift; sourceTree = "<group>"; };
+		EE937C281F795F37004E8C48 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Code/Application/Constants.swift; sourceTree = "<group>"; };
+		EE937C311F79623D004E8C48 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Resources/Colors/Color.swift; sourceTree = "<group>"; };
+		EE937C331F79635D004E8C48 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Font.swift; path = Resources/Fonts/Font.swift; sourceTree = "<group>"; };
+		EE937C381F796663004E8C48 /* ErrorViewLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorViewLabel.swift; path = Code/Presentation/Common/View/Label/ErrorViewLabel.swift; sourceTree = "<group>"; };
+		EE937C391F796663004E8C48 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Label.swift; path = Code/Presentation/Common/View/Label/Label.swift; sourceTree = "<group>"; };
+		EE937C3C1F796685004E8C48 /* ColoredTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColoredTextButton.swift; path = Code/Presentation/Common/View/Button/ColoredTextButton.swift; sourceTree = "<group>"; };
+		EE937C3F1F796709004E8C48 /* UIImage+ResizableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+ResizableImage.swift"; path = "Code/Extensions/UIImage+ResizableImage.swift"; sourceTree = "<group>"; };
+		EE937C411F796765004E8C48 /* GreenTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreenTextButton.swift; path = Code/Presentation/Common/View/Button/GreenTextButton.swift; sourceTree = "<group>"; };
+		EED890471F79836400300AF9 /* UIView+Autolayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Autolayout.swift"; path = "Code/Extensions/UIView+Autolayout.swift"; sourceTree = "<group>"; };
+		EED8904A1F799A4800300AF9 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = Resources/Strings/Strings.swift; sourceTree = "<group>"; };
+		EED890541F799E4500300AF9 /* RobotsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotsView.swift; path = Code/Presentation/Main/View/RobotsView.swift; sourceTree = "<group>"; };
+		EED890561F79A27F00300AF9 /* RobotsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotsViewController.swift; path = Code/Presentation/Main/ViewController/RobotsViewController.swift; sourceTree = "<group>"; };
+		EED890581F79A7DD00300AF9 /* AppearanceInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppearanceInitializer.swift; path = Code/Application/AppearanceInitializer.swift; sourceTree = "<group>"; };
+		EED8905A1F79A8DE00300AF9 /* RobotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotView.swift; path = Code/Presentation/Main/View/RobotView.swift; sourceTree = "<group>"; };
+		EED8905C1F79A8F300300AF9 /* RobotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotViewController.swift; path = Code/Presentation/Main/ViewController/RobotViewController.swift; sourceTree = "<group>"; };
+		EED8905F1F79A9A800300AF9 /* SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegueHandler.swift; path = Code/Utils/SegueHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				EE937C0D1F786CBC004E8C48 /* Application */,
+				EE937C3E1F7966E8004E8C48 /* Extensions */,
 				EE937C101F786D7D004E8C48 /* Presentation */,
+				EED8905E1F79A97F00300AF9 /* Utils */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -88,6 +124,9 @@
 		EE937C041F7868E8004E8C48 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EED890491F7999DE00300AF9 /* Strings */,
+				EE937C301F796229004E8C48 /* Fonts */,
+				EE937C2F1F796222004E8C48 /* Colors */,
 				EE937C061F786909004E8C48 /* Assets */,
 			);
 			name = Resources;
@@ -114,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				EE937C0E1F786CF5004E8C48 /* AppDelegate.swift */,
+				EE937C281F795F37004E8C48 /* Constants.swift */,
+				EED890581F79A7DD00300AF9 /* AppearanceInitializer.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -130,6 +171,8 @@
 		EE937C111F786D8E004E8C48 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EED890521F799E1F00300AF9 /* View */,
+				EED890531F799E2300300AF9 /* ViewController */,
 				EE937C121F786E4C004E8C48 /* Main.storyboard */,
 			);
 			name = Main;
@@ -138,6 +181,7 @@
 		EE937C141F786E52004E8C48 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EE937C231F795CE8004E8C48 /* View */,
 				EE937C151F786E58004E8C48 /* ViewController */,
 			);
 			name = Common;
@@ -149,6 +193,93 @@
 				EE937C161F786E64004E8C48 /* ViewController.swift */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		EE937C231F795CE8004E8C48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE937C371F79664D004E8C48 /* Button */,
+				EE937C361F796648004E8C48 /* Label */,
+				EE937C261F795EC9004E8C48 /* View.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EE937C2F1F796222004E8C48 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				EE937C311F79623D004E8C48 /* Color.swift */,
+			);
+			name = Colors;
+			sourceTree = "<group>";
+		};
+		EE937C301F796229004E8C48 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EE937C331F79635D004E8C48 /* Font.swift */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		EE937C361F796648004E8C48 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				EE937C391F796663004E8C48 /* Label.swift */,
+				EE937C381F796663004E8C48 /* ErrorViewLabel.swift */,
+			);
+			name = Label;
+			sourceTree = "<group>";
+		};
+		EE937C371F79664D004E8C48 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				EE937C3C1F796685004E8C48 /* ColoredTextButton.swift */,
+				EE937C411F796765004E8C48 /* GreenTextButton.swift */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		EE937C3E1F7966E8004E8C48 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE937C3F1F796709004E8C48 /* UIImage+ResizableImage.swift */,
+				EED890471F79836400300AF9 /* UIView+Autolayout.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EED890491F7999DE00300AF9 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				EED8904A1F799A4800300AF9 /* Strings.swift */,
+			);
+			name = Strings;
+			sourceTree = "<group>";
+		};
+		EED890521F799E1F00300AF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EED890541F799E4500300AF9 /* RobotsView.swift */,
+				EED8905A1F79A8DE00300AF9 /* RobotView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EED890531F799E2300300AF9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EED890561F79A27F00300AF9 /* RobotsViewController.swift */,
+				EED8905C1F79A8F300300AF9 /* RobotViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		EED8905E1F79A97F00300AF9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EED8905F1F79A9A800300AF9 /* SegueHandler.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		FB5CE1486A418262B23598A8 /* Pods */ = {
@@ -285,8 +416,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED890601F79A9A800300AF9 /* SegueHandler.swift in Sources */,
+				EE937C3D1F796685004E8C48 /* ColoredTextButton.swift in Sources */,
+				EED890481F79836400300AF9 /* UIView+Autolayout.swift in Sources */,
+				EE937C401F796709004E8C48 /* UIImage+ResizableImage.swift in Sources */,
 				EE937C171F786E64004E8C48 /* ViewController.swift in Sources */,
 				EE937C0F1F786CF5004E8C48 /* AppDelegate.swift in Sources */,
+				EE937C321F79623D004E8C48 /* Color.swift in Sources */,
+				EE937C3A1F796663004E8C48 /* ErrorViewLabel.swift in Sources */,
+				EED8905D1F79A8F300300AF9 /* RobotViewController.swift in Sources */,
+				EED8904B1F799A4800300AF9 /* Strings.swift in Sources */,
+				EE937C341F79635D004E8C48 /* Font.swift in Sources */,
+				EED8905B1F79A8DE00300AF9 /* RobotView.swift in Sources */,
+				EE937C271F795EC9004E8C48 /* View.swift in Sources */,
+				EED890591F79A7DD00300AF9 /* AppearanceInitializer.swift in Sources */,
+				EED890571F79A27F00300AF9 /* RobotsViewController.swift in Sources */,
+				EE937C421F796765004E8C48 /* GreenTextButton.swift in Sources */,
+				EED890551F799E4500300AF9 /* RobotsView.swift in Sources */,
+				EE937C3B1F796663004E8C48 /* Label.swift in Sources */,
+				EE937C291F795F37004E8C48 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,14 +2,17 @@ PODS:
   - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
+  - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - AlamofireImage
+  - SnapKit (~> 3.0.0)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: 499e46b6b3464c73005b06f1dd039ce7cb4dd322
+PODFILE CHECKSUM: 629538efe0cc408f86521fb028f108baab1e324b
 
 COCOAPODS: 1.2.1

@@ -7,4 +7,7 @@ target 'Robots' do
     # Image downloading
     pod 'AlamofireImage'
 
+    # Layouting
+    pod 'SnapKit', '~> 3.0.0'
+
 end
