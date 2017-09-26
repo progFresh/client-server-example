@@ -20,9 +20,32 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="RobotsView" customModule="Robots" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="78M-da-mmv">
+                                <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bzw-4R-jS7">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="78M-da-mmv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2GI-7Z-VWS"/>
+                            <constraint firstItem="78M-da-mmv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ndu-VX-8mJ"/>
+                            <constraint firstItem="78M-da-mmv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vVG-2t-6Q0"/>
+                            <constraint firstItem="78M-da-mmv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="wSz-JT-Nao"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="collectionView" destination="78M-da-mmv" id="gQF-ng-l6d"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="UAl-h7-Dlq"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="rootView" destination="8bC-Xf-vdC" id="pWP-rx-G9k"/>
                         <segue destination="nAB-Ee-BpN" kind="show" identifier="showRobot" id="sbB-EP-xDB"/>

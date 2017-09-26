@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		84F3A077B96A114A7E98AA85 /* Pods_Robots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F492AE322B799B3854343E0 /* Pods_Robots.framework */; };
+		EE8EC07F1F7AC741008A94AC /* CollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EC07E1F7AC741008A94AC /* CollectionViewAdapter.swift */; };
+		EE8EC0831F7AC838008A94AC /* RobotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EC0811F7AC838008A94AC /* RobotCell.swift */; };
+		EE8EC0841F7AC838008A94AC /* RobotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8EC0821F7AC838008A94AC /* RobotCell.xib */; };
+		EE8EC0861F7ACAAF008A94AC /* UIImageView+ImageDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EC0851F7ACAAF008A94AC /* UIImageView+ImageDownloading.swift */; };
 		EE937C081F7869AC004E8C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE937C071F7869AC004E8C48 /* Assets.xcassets */; };
 		EE937C0C1F786C74004E8C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE937C0A1F786C74004E8C48 /* LaunchScreen.storyboard */; };
 		EE937C0F1F786CF5004E8C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C0E1F786CF5004E8C48 /* AppDelegate.swift */; };
@@ -57,6 +61,10 @@
 		2F492AE322B799B3854343E0 /* Pods_Robots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1FC0A0F093FE6E89AC09CE /* Pods-Robots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Robots/Pods-Robots.debug.xcconfig"; sourceTree = "<group>"; };
 		AD6F9C5729568D3F16D8AEEE /* Pods-Robots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots.release.xcconfig"; path = "Pods/Target Support Files/Pods-Robots/Pods-Robots.release.xcconfig"; sourceTree = "<group>"; };
+		EE8EC07E1F7AC741008A94AC /* CollectionViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewAdapter.swift; path = Code/Presentation/Common/Helper/CollectionViewAdapter.swift; sourceTree = "<group>"; };
+		EE8EC0811F7AC838008A94AC /* RobotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotCell.swift; path = Code/Presentation/Main/View/Cell/RobotCell.swift; sourceTree = "<group>"; };
+		EE8EC0821F7AC838008A94AC /* RobotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RobotCell.xib; path = Code/Presentation/Main/View/Cell/RobotCell.xib; sourceTree = "<group>"; };
+		EE8EC0851F7ACAAF008A94AC /* UIImageView+ImageDownloading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+ImageDownloading.swift"; path = "Code/Extensions/UIImageView+ImageDownloading.swift"; sourceTree = "<group>"; };
 		EE937BEE1F786792004E8C48 /* Robots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE937C071F7869AC004E8C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		EE937C091F786C74004E8C48 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
@@ -122,6 +130,23 @@
 				2F492AE322B799B3854343E0 /* Pods_Robots.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE8EC07D1F7AC729008A94AC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EE8EC07E1F7AC741008A94AC /* CollectionViewAdapter.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		EE8EC0801F7AC80C008A94AC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE8EC0811F7AC838008A94AC /* RobotCell.swift */,
+				EE8EC0821F7AC838008A94AC /* RobotCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		EE937BE51F786792004E8C48 = {
@@ -225,6 +250,7 @@
 		EE937C141F786E52004E8C48 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EE8EC07D1F7AC729008A94AC /* Helper */,
 				EE937C231F795CE8004E8C48 /* View */,
 				EE937C151F786E58004E8C48 /* ViewController */,
 			);
@@ -289,6 +315,7 @@
 				EE937C3F1F796709004E8C48 /* UIImage+ResizableImage.swift */,
 				EED890471F79836400300AF9 /* UIView+Autolayout.swift */,
 				EED890711F7A7ACD00300AF9 /* Dictionary+Mapping.swift */,
+				EE8EC0851F7ACAAF008A94AC /* UIImageView+ImageDownloading.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -304,6 +331,7 @@
 		EED890521F799E1F00300AF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EE8EC0801F7AC80C008A94AC /* Cell */,
 				EED890541F799E4500300AF9 /* RobotsView.swift */,
 				EED8905A1F79A8DE00300AF9 /* RobotView.swift */,
 			);
@@ -538,6 +566,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8EC0841F7AC838008A94AC /* RobotCell.xib in Resources */,
 				EE937C0C1F786C74004E8C48 /* LaunchScreen.storyboard in Resources */,
 				EE937C081F7869AC004E8C48 /* Assets.xcassets in Resources */,
 				EE937C131F786E4C004E8C48 /* Main.storyboard in Resources */,
@@ -601,6 +630,7 @@
 			files = (
 				EED890601F79A9A800300AF9 /* SegueHandler.swift in Sources */,
 				EED890821F7A973B00300AF9 /* ServiceAssembly.swift in Sources */,
+				EE8EC07F1F7AC741008A94AC /* CollectionViewAdapter.swift in Sources */,
 				EED890781F7A8F4B00300AF9 /* Scheduler.swift in Sources */,
 				EE937C3D1F796685004E8C48 /* ColoredTextButton.swift in Sources */,
 				EED890851F7A976C00300AF9 /* Transport.swift in Sources */,
@@ -613,6 +643,7 @@
 				EED890641F79AD5900300AF9 /* Result.swift in Sources */,
 				EED890671F7A717800300AF9 /* Deserializer.swift in Sources */,
 				EED890691F7A71A300300AF9 /* JSONDeserializer.swift in Sources */,
+				EE8EC0861F7ACAAF008A94AC /* UIImageView+ImageDownloading.swift in Sources */,
 				EED890951F7AAE5A00300AF9 /* RobotsNetworkRepository.swift in Sources */,
 				EE937C321F79623D004E8C48 /* Color.swift in Sources */,
 				EE937C3A1F796663004E8C48 /* ErrorViewLabel.swift in Sources */,
@@ -628,6 +659,7 @@
 				EED8905B1F79A8DE00300AF9 /* RobotView.swift in Sources */,
 				EED8907A1F7A8F6300300AF9 /* GCDScheduler.swift in Sources */,
 				EED890721F7A7ACD00300AF9 /* Dictionary+Mapping.swift in Sources */,
+				EE8EC0831F7AC838008A94AC /* RobotCell.swift in Sources */,
 				EE937C271F795EC9004E8C48 /* View.swift in Sources */,
 				EED890591F79A7DD00300AF9 /* AppearanceInitializer.swift in Sources */,
 				EED890571F79A27F00300AF9 /* RobotsViewController.swift in Sources */,
