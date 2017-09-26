@@ -22,4 +22,5 @@ extension String {
     // MARK: Robots
 
     static let RobotsTitle = "Роботы"
+    static let RobotBackButton = "Вернуться назад"
 }

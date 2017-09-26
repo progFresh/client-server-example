@@ -30,8 +30,9 @@ final class RobotViewController: ViewController {
 
     private func setupRootView() {
         rootView.didLoad()
-        rootView.errorBlock? = {
-            self.navigationController?.popViewController(animated: true)
+        rootView.errorButton.setTitle(.RobotBackButton, for: .normal)
+        rootView.errorBlock = { [weak self ] in
+            self?.navigationController?.popViewController(animated: true)
         }
     }
 
