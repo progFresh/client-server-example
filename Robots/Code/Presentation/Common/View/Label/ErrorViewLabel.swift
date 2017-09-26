@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-final class ErrorViewLabelLabel: Label {
+final class ErrorViewLabel: Label {
     override var labelColor: UIColor { return Color.errorViewLabel }
     override var labelFont: UIFont { return Font.errorView }
 }

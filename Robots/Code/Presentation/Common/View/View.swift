@@ -41,9 +41,9 @@ class View: UIView {
     // MARK: Properties
 
     var errorBlock: Block?
-    let spinner = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+    let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
     let errorView: UIView = UIView()
-    let errorLabel: UILabel = ErrorViewLabelLabel()
+    let errorLabel: UILabel = ErrorViewLabel()
     let errorButton: UIButton = GreenTextButton(type: .custom)
 
     let errorButtonWidth: CGFloat = CGFloat(220)

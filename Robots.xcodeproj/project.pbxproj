@@ -12,6 +12,7 @@
 		EE8EC0831F7AC838008A94AC /* RobotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EC0811F7AC838008A94AC /* RobotCell.swift */; };
 		EE8EC0841F7AC838008A94AC /* RobotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8EC0821F7AC838008A94AC /* RobotCell.xib */; };
 		EE8EC0861F7ACAAF008A94AC /* UIImageView+ImageDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EC0851F7ACAAF008A94AC /* UIImageView+ImageDownloading.swift */; };
+		EE8EC0881F7AD4CD008A94AC /* RobotCellLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EC0871F7AD4CD008A94AC /* RobotCellLabel.swift */; };
 		EE937C081F7869AC004E8C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE937C071F7869AC004E8C48 /* Assets.xcassets */; };
 		EE937C0C1F786C74004E8C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE937C0A1F786C74004E8C48 /* LaunchScreen.storyboard */; };
 		EE937C0F1F786CF5004E8C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE937C0E1F786CF5004E8C48 /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		EE8EC0811F7AC838008A94AC /* RobotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotCell.swift; path = Code/Presentation/Main/View/Cell/RobotCell.swift; sourceTree = "<group>"; };
 		EE8EC0821F7AC838008A94AC /* RobotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RobotCell.xib; path = Code/Presentation/Main/View/Cell/RobotCell.xib; sourceTree = "<group>"; };
 		EE8EC0851F7ACAAF008A94AC /* UIImageView+ImageDownloading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+ImageDownloading.swift"; path = "Code/Extensions/UIImageView+ImageDownloading.swift"; sourceTree = "<group>"; };
+		EE8EC0871F7AD4CD008A94AC /* RobotCellLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotCellLabel.swift; path = Code/Presentation/Common/View/Label/RobotCellLabel.swift; sourceTree = "<group>"; };
 		EE937BEE1F786792004E8C48 /* Robots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE937C071F7869AC004E8C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		EE937C091F786C74004E8C48 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 			children = (
 				EE937C391F796663004E8C48 /* Label.swift */,
 				EE937C381F796663004E8C48 /* ErrorViewLabel.swift */,
+				EE8EC0871F7AD4CD008A94AC /* RobotCellLabel.swift */,
 			);
 			name = Label;
 			sourceTree = "<group>";
@@ -665,6 +668,7 @@
 				EED890571F79A27F00300AF9 /* RobotsViewController.swift in Sources */,
 				EED8909B1F7ABB3800300AF9 /* RobotsServiceAssembly.swift in Sources */,
 				EED8907D1F7A908800300AF9 /* ServiceLayer.swift in Sources */,
+				EE8EC0881F7AD4CD008A94AC /* RobotCellLabel.swift in Sources */,
 				EED8908D1F7AA70200300AF9 /* Robot.swift in Sources */,
 				EE937C421F796765004E8C48 /* GreenTextButton.swift in Sources */,
 				EED890551F799E4500300AF9 /* RobotsView.swift in Sources */,

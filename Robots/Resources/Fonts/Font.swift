@@ -11,4 +11,5 @@ import UIKit
 enum Font {
     static let normal = UIFont.systemFont(ofSize: UIFont.systemFontSize)
     static let errorView = UIFont.systemFont(ofSize: 20, weight: UIFontWeightSemibold)
+    static let robotCell = UIFont.systemFont(ofSize: 19, weight: UIFontWeightSemibold)
 }
