@@ -20,7 +20,9 @@ class RobotsViewController: ViewController {
         super.viewDidLoad()
         title = .RobotsTitle
         setupRootView()
-        self.performSegue(with: .showRobot, sender: nil)
+        serviceLayer.robotsService.getRobots { (result) in
+            print(result)
+        }
     }
 
     // MARK: Private helpers

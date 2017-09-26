@@ -10,5 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: Properties
+
+    let serviceLayer = ServiceLayer.shared
 }
 

@@ -14,6 +14,6 @@ extension NetworkRepository {
     func dataDictionary(from result: Result<Data>, using deserializer: Deserializer) throws -> ModelDictionary {
         let data = try result.dematerialize()
         let responseDictionary = try deserializer.deserialize(data: data)
-        return try responseDictionary.field(for: .items)
+        return responseDictionary
     }
 }

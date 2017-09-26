@@ -8,24 +8,18 @@
 
 
 final class ServiceLayer {
-    
+
     // MARK: Singleton
-    
+
     static let shared = ServiceLayer()
-    
+
     // MARK: Services
-    
-//    let manufacturersService: ManufacturerService
-//    
-//    let reviewService: ReviewService
-//    
-//    let catalogService: CatalogService
-    
+
+    let robotsService: RobotsService
+
     // MARK: Initialization
-    
+
     private init() {
-//        self.manufacturersService = ManufacturerServiceAssembly.service()
-//        self.reviewService = ReviewServiceAssemblyImpl().service()
-//        self.catalogService = CatalogServiceAssemblyImpl().service()
+        self.robotsService = RobotsServiceAssemblyImpl().service()
     }
 }

@@ -45,6 +45,12 @@
 		EED890821F7A973B00300AF9 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890811F7A973B00300AF9 /* ServiceAssembly.swift */; };
 		EED890851F7A976C00300AF9 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890841F7A976C00300AF9 /* Transport.swift */; };
 		EED890871F7A979700300AF9 /* AlamofireTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890861F7A979700300AF9 /* AlamofireTransport.swift */; };
+		EED8908D1F7AA70200300AF9 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8908C1F7AA70200300AF9 /* Robot.swift */; };
+		EED890901F7AADAF00300AF9 /* RobotsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8908F1F7AADAF00300AF9 /* RobotsRepository.swift */; };
+		EED890931F7AADFF00300AF9 /* RobotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890921F7AADFF00300AF9 /* RobotsService.swift */; };
+		EED890951F7AAE5A00300AF9 /* RobotsNetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890941F7AAE5A00300AF9 /* RobotsNetworkRepository.swift */; };
+		EED890981F7AAEDB00300AF9 /* RobotRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890971F7AAEDB00300AF9 /* RobotRequest.swift */; };
+		EED8909B1F7ABB3800300AF9 /* RobotsServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8909A1F7ABB3800300AF9 /* RobotsServiceAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +96,12 @@
 		EED890811F7A973B00300AF9 /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceAssembly.swift; path = "Code/Business Logic/Common/ServiceAssembly/ServiceAssembly.swift"; sourceTree = "<group>"; };
 		EED890841F7A976C00300AF9 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = "Code/Business Logic/Common/Transport/Transport.swift"; sourceTree = "<group>"; };
 		EED890861F7A979700300AF9 /* AlamofireTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireTransport.swift; path = "Code/Business Logic/Common/Transport/AlamofireTransport.swift"; sourceTree = "<group>"; };
+		EED8908C1F7AA70200300AF9 /* Robot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Robot.swift; path = "Code/Business Logic/Robots/Model/Robot.swift"; sourceTree = "<group>"; };
+		EED8908F1F7AADAF00300AF9 /* RobotsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotsRepository.swift; path = "Code/Business Logic/Robots/Repository/RobotsRepository.swift"; sourceTree = "<group>"; };
+		EED890921F7AADFF00300AF9 /* RobotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotsService.swift; path = "Code/Business Logic/Robots/Service/RobotsService.swift"; sourceTree = "<group>"; };
+		EED890941F7AAE5A00300AF9 /* RobotsNetworkRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotsNetworkRepository.swift; path = "Code/Business Logic/Robots/Repository/RobotsNetworkRepository.swift"; sourceTree = "<group>"; };
+		EED890971F7AAEDB00300AF9 /* RobotRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotRequest.swift; path = "Code/Business Logic/Robots/Request/RobotRequest.swift"; sourceTree = "<group>"; };
+		EED8909A1F7ABB3800300AF9 /* RobotsServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotsServiceAssembly.swift; path = "Code/Business Logic/Robots/ServiceAssembly/RobotsServiceAssembly.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +331,7 @@
 		EED890611F79AD0400300AF9 /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				EED890881F7AA07000300AF9 /* Robots */,
 				EED890621F79AD1500300AF9 /* Common */,
 			);
 			name = BusinessLogic;
@@ -397,6 +410,59 @@
 				EED890861F7A979700300AF9 /* AlamofireTransport.swift */,
 			);
 			name = Transport;
+			sourceTree = "<group>";
+		};
+		EED890881F7AA07000300AF9 /* Robots */ = {
+			isa = PBXGroup;
+			children = (
+				EED890891F7AA6BC00300AF9 /* Model */,
+				EED8908E1F7AAD9600300AF9 /* Repository */,
+				EED890961F7AAEBB00300AF9 /* Request */,
+				EED890911F7AADE600300AF9 /* Service */,
+				EED890991F7ABB1500300AF9 /* ServiceAssembly */,
+			);
+			name = Robots;
+			sourceTree = "<group>";
+		};
+		EED890891F7AA6BC00300AF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EED8908C1F7AA70200300AF9 /* Robot.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EED8908E1F7AAD9600300AF9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EED8908F1F7AADAF00300AF9 /* RobotsRepository.swift */,
+				EED890941F7AAE5A00300AF9 /* RobotsNetworkRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		EED890911F7AADE600300AF9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EED890921F7AADFF00300AF9 /* RobotsService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		EED890961F7AAEBB00300AF9 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EED890971F7AAEDB00300AF9 /* RobotRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		EED890991F7ABB1500300AF9 /* ServiceAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				EED8909A1F7ABB3800300AF9 /* RobotsServiceAssembly.swift */,
+			);
+			name = ServiceAssembly;
 			sourceTree = "<group>";
 		};
 		FB5CE1486A418262B23598A8 /* Pods */ = {
@@ -539,6 +605,7 @@
 				EE937C3D1F796685004E8C48 /* ColoredTextButton.swift in Sources */,
 				EED890851F7A976C00300AF9 /* Transport.swift in Sources */,
 				EED890481F79836400300AF9 /* UIView+Autolayout.swift in Sources */,
+				EED890981F7AAEDB00300AF9 /* RobotRequest.swift in Sources */,
 				EED890701F7A75C000300AF9 /* NetworkRepository.swift in Sources */,
 				EE937C401F796709004E8C48 /* UIImage+ResizableImage.swift in Sources */,
 				EE937C171F786E64004E8C48 /* ViewController.swift in Sources */,
@@ -546,6 +613,7 @@
 				EED890641F79AD5900300AF9 /* Result.swift in Sources */,
 				EED890671F7A717800300AF9 /* Deserializer.swift in Sources */,
 				EED890691F7A71A300300AF9 /* JSONDeserializer.swift in Sources */,
+				EED890951F7AAE5A00300AF9 /* RobotsNetworkRepository.swift in Sources */,
 				EE937C321F79623D004E8C48 /* Color.swift in Sources */,
 				EE937C3A1F796663004E8C48 /* ErrorViewLabel.swift in Sources */,
 				EED8907F1F7A961900300AF9 /* Service.swift in Sources */,
@@ -555,6 +623,7 @@
 				EED8906B1F7A726100300AF9 /* AppError.swift in Sources */,
 				EED890871F7A979700300AF9 /* AlamofireTransport.swift in Sources */,
 				EED890751F7A8B7C00300AF9 /* Request.swift in Sources */,
+				EED890901F7AADAF00300AF9 /* RobotsRepository.swift in Sources */,
 				EE937C341F79635D004E8C48 /* Font.swift in Sources */,
 				EED8905B1F79A8DE00300AF9 /* RobotView.swift in Sources */,
 				EED8907A1F7A8F6300300AF9 /* GCDScheduler.swift in Sources */,
@@ -562,10 +631,13 @@
 				EE937C271F795EC9004E8C48 /* View.swift in Sources */,
 				EED890591F79A7DD00300AF9 /* AppearanceInitializer.swift in Sources */,
 				EED890571F79A27F00300AF9 /* RobotsViewController.swift in Sources */,
+				EED8909B1F7ABB3800300AF9 /* RobotsServiceAssembly.swift in Sources */,
 				EED8907D1F7A908800300AF9 /* ServiceLayer.swift in Sources */,
+				EED8908D1F7AA70200300AF9 /* Robot.swift in Sources */,
 				EE937C421F796765004E8C48 /* GreenTextButton.swift in Sources */,
 				EED890551F799E4500300AF9 /* RobotsView.swift in Sources */,
 				EE937C3B1F796663004E8C48 /* Label.swift in Sources */,
+				EED890931F7AADFF00300AF9 /* RobotsService.swift in Sources */,
 				EE937C291F795F37004E8C48 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
