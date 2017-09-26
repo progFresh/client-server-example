@@ -6,4 +6,19 @@
 //  Copyright © 2017 sergey. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+final class RobotViewController: ViewController {
+
+    // MARK: Properties
+
+    var robot: Robot?
+
+    // MARK: UIViewController
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print(robot)
+    }
+}
+

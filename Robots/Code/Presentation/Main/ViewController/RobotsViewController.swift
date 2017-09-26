@@ -17,8 +17,9 @@ class RobotsViewController: ViewController {
     // MARK: Private Properties
     
     private var adapter: CollectionViewAdapter<Robot, RobotCell>?
+    private var robotForSegue: Robot?
 
-    // MARK: UIViewCOntroller
+    // MARK: UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +36,19 @@ class RobotsViewController: ViewController {
         rootView.setupLayout(width: width)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? RobotViewController {
+           destination.robot = self.robotForSegue
+        }
+    }
     // MARK: Private helpers
 
     private func setupRootView(width: CGFloat) {
         rootView.didLoad()
         rootView.setupLayout(width: width)
+        rootView.errorBlock = { [weak self] in
+            self?.loadRobots()
+        }
     }
 
     private func initNavigationBar() {
@@ -60,7 +69,8 @@ class RobotsViewController: ViewController {
             self?.configure(cell: cell, with: robot, at: index)
         }
         adapter.itemSelectedBlock = { [weak self] index, robot in
-            print("perehod na ekran")
+            self?.robotForSegue = robot
+            self?.performSegue(with: .showRobot, sender: nil)
         }
         return adapter
     }

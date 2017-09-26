@@ -54,10 +54,12 @@ final class RobotsView: View {
     override func setInitialState() {
         spinner.stopAnimating()
         errorView.isHidden = true
+        collectionView.isHidden = true
     }
 
     override func setItemsState() {
         setInitialState()
+        collectionView.isHidden = false
     }
 
     override func setErrorState() {
