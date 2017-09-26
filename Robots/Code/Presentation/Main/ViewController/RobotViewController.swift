@@ -50,6 +50,23 @@ final class RobotViewController: ViewController {
         rootView.imageView.layer.borderColor = Color.black.cgColor
         rootView.imageView.layer.borderWidth = CGFloat(1)
         rootView.imageView.setImage(withURL: robot.photo)
+        
+        rootView.nameLabel.text = robot.firstName + " " + robot.lastName
+        rootView.aboutLabel.text = robot.about
+        rootView.addressLabel.text = "Адресс: " + robot.address
+        rootView.companyLabel.text = "Компания: " + robot.company
+        
+        rootView.phoneLabel.text = "Номер: "
+        rootView.phoneButton.setTitle(robot.phone, for: .normal)
+        rootView.phoneAction = {
+            if let number = URL(string: "tel://" + robot.phone) {
+                UIApplication.shared.open(number, options: [:], completionHandler: nil)
+            }
+        }
+        
+        rootView.emailLabel.text = "e-mail: "
+        rootView.emailButton.setTitle(robot.email, for: .normal)
+        rootView.emailAction = {}
     }
 }
 

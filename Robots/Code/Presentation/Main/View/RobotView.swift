@@ -15,10 +15,29 @@ final class RobotView: View {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var aboutLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var companyLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var phoneButton: UIButton!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var emailButton: UIButton!
 
     // MARK: IBActions
 
+    @IBAction func phoneButtonAction(_ sender: Any) {
+        phoneAction?()
+    }
+
+    @IBAction func emailAction(_ sender: Any) {
+        emailAction?()
+    }
+
     // Properties
+
+    var phoneAction: Block?
+    var emailAction: Block?
 
     // MARK: Internal Helpers
 
