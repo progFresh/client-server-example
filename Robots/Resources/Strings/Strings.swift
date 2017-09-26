@@ -10,8 +10,16 @@ import Foundation
 
 extension String {
 
+    // AppError
+
+    static let ErrorUnknown = "Неизвестная ошибка"
+
     // MARK: Error
 
     static let ErrorViewLabel = "Не удалось загрузить контент"
     static let ErrorButtonText = "ПОВТОРИТЬ"
+
+    // MARK: Robots
+
+    static let RobotsTitle = "Роботы"
 }

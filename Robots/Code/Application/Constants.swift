@@ -9,3 +9,13 @@
 import UIKit
 
 typealias Block = () -> Void
+typealias ModelDictionary = [String: Any]
+typealias ResultBlock<T> = (Result<T>) -> Void
+
+extension TimeInterval {
+    static let requestTimeout: TimeInterval = 10
+}
+
+enum ServerField: String {
+    case items
+}

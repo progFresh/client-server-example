@@ -30,6 +30,21 @@
 		EED8905B1F79A8DE00300AF9 /* RobotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8905A1F79A8DE00300AF9 /* RobotView.swift */; };
 		EED8905D1F79A8F300300AF9 /* RobotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8905C1F79A8F300300AF9 /* RobotViewController.swift */; };
 		EED890601F79A9A800300AF9 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8905F1F79A9A800300AF9 /* SegueHandler.swift */; };
+		EED890641F79AD5900300AF9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890631F79AD5900300AF9 /* Result.swift */; };
+		EED890671F7A717800300AF9 /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890661F7A717800300AF9 /* Deserializer.swift */; };
+		EED890691F7A71A300300AF9 /* JSONDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890681F7A71A300300AF9 /* JSONDeserializer.swift */; };
+		EED8906B1F7A726100300AF9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8906A1F7A726100300AF9 /* AppError.swift */; };
+		EED8906E1F7A73BE00300AF9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8906D1F7A73BE00300AF9 /* Repository.swift */; };
+		EED890701F7A75C000300AF9 /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8906F1F7A75C000300AF9 /* NetworkRepository.swift */; };
+		EED890721F7A7ACD00300AF9 /* Dictionary+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890711F7A7ACD00300AF9 /* Dictionary+Mapping.swift */; };
+		EED890751F7A8B7C00300AF9 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890741F7A8B7C00300AF9 /* Request.swift */; };
+		EED890781F7A8F4B00300AF9 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890771F7A8F4B00300AF9 /* Scheduler.swift */; };
+		EED8907A1F7A8F6300300AF9 /* GCDScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890791F7A8F6300300AF9 /* GCDScheduler.swift */; };
+		EED8907D1F7A908800300AF9 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8907C1F7A908800300AF9 /* ServiceLayer.swift */; };
+		EED8907F1F7A961900300AF9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8907E1F7A961900300AF9 /* Service.swift */; };
+		EED890821F7A973B00300AF9 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890811F7A973B00300AF9 /* ServiceAssembly.swift */; };
+		EED890851F7A976C00300AF9 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890841F7A976C00300AF9 /* Transport.swift */; };
+		EED890871F7A979700300AF9 /* AlamofireTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED890861F7A979700300AF9 /* AlamofireTransport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +75,21 @@
 		EED8905A1F79A8DE00300AF9 /* RobotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotView.swift; path = Code/Presentation/Main/View/RobotView.swift; sourceTree = "<group>"; };
 		EED8905C1F79A8F300300AF9 /* RobotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotViewController.swift; path = Code/Presentation/Main/ViewController/RobotViewController.swift; sourceTree = "<group>"; };
 		EED8905F1F79A9A800300AF9 /* SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegueHandler.swift; path = Code/Utils/SegueHandler.swift; sourceTree = "<group>"; };
+		EED890631F79AD5900300AF9 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Code/Utils/Result.swift; sourceTree = "<group>"; };
+		EED890661F7A717800300AF9 /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deserializer.swift; path = "Code/Business Logic/Common/Deserializer/Deserializer.swift"; sourceTree = "<group>"; };
+		EED890681F7A71A300300AF9 /* JSONDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONDeserializer.swift; path = "Code/Business Logic/Common/Deserializer/JSONDeserializer.swift"; sourceTree = "<group>"; };
+		EED8906A1F7A726100300AF9 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppError.swift; path = Code/Application/AppError.swift; sourceTree = "<group>"; };
+		EED8906D1F7A73BE00300AF9 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = "Code/Business Logic/Common/Repository/Repository.swift"; sourceTree = "<group>"; };
+		EED8906F1F7A75C000300AF9 /* NetworkRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRepository.swift; path = "Code/Business Logic/Common/Repository/NetworkRepository.swift"; sourceTree = "<group>"; };
+		EED890711F7A7ACD00300AF9 /* Dictionary+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Dictionary+Mapping.swift"; path = "Code/Extensions/Dictionary+Mapping.swift"; sourceTree = "<group>"; };
+		EED890741F7A8B7C00300AF9 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = "Code/Business Logic/Common/Request/Request.swift"; sourceTree = "<group>"; };
+		EED890771F7A8F4B00300AF9 /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Scheduler.swift; path = "Code/Business Logic/Common/Scheduler/Scheduler.swift"; sourceTree = "<group>"; };
+		EED890791F7A8F6300300AF9 /* GCDScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GCDScheduler.swift; path = "Code/Business Logic/Common/Scheduler/GCDScheduler.swift"; sourceTree = "<group>"; };
+		EED8907C1F7A908800300AF9 /* ServiceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceLayer.swift; path = "Code/Business Logic/Common/Service/ServiceLayer.swift"; sourceTree = "<group>"; };
+		EED8907E1F7A961900300AF9 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = "Code/Business Logic/Common/Service/Service.swift"; sourceTree = "<group>"; };
+		EED890811F7A973B00300AF9 /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceAssembly.swift; path = "Code/Business Logic/Common/ServiceAssembly/ServiceAssembly.swift"; sourceTree = "<group>"; };
+		EED890841F7A976C00300AF9 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = "Code/Business Logic/Common/Transport/Transport.swift"; sourceTree = "<group>"; };
+		EED890861F7A979700300AF9 /* AlamofireTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireTransport.swift; path = "Code/Business Logic/Common/Transport/AlamofireTransport.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				EE937C0D1F786CBC004E8C48 /* Application */,
+				EED890611F79AD0400300AF9 /* BusinessLogic */,
 				EE937C3E1F7966E8004E8C48 /* Extensions */,
 				EE937C101F786D7D004E8C48 /* Presentation */,
 				EED8905E1F79A97F00300AF9 /* Utils */,
@@ -155,6 +186,7 @@
 				EE937C0E1F786CF5004E8C48 /* AppDelegate.swift */,
 				EE937C281F795F37004E8C48 /* Constants.swift */,
 				EED890581F79A7DD00300AF9 /* AppearanceInitializer.swift */,
+				EED8906A1F7A726100300AF9 /* AppError.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -244,6 +276,7 @@
 			children = (
 				EE937C3F1F796709004E8C48 /* UIImage+ResizableImage.swift */,
 				EED890471F79836400300AF9 /* UIView+Autolayout.swift */,
+				EED890711F7A7ACD00300AF9 /* Dictionary+Mapping.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -278,8 +311,92 @@
 			isa = PBXGroup;
 			children = (
 				EED8905F1F79A9A800300AF9 /* SegueHandler.swift */,
+				EED890631F79AD5900300AF9 /* Result.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		EED890611F79AD0400300AF9 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				EED890621F79AD1500300AF9 /* Common */,
+			);
+			name = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		EED890621F79AD1500300AF9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EED890651F7A713B00300AF9 /* Deserializer */,
+				EED8906C1F7A739F00300AF9 /* Repository */,
+				EED890731F7A8B6B00300AF9 /* Request */,
+				EED890761F7A8EF100300AF9 /* Scheduler */,
+				EED890831F7A975000300AF9 /* Transport */,
+				EED8907B1F7A903C00300AF9 /* Service */,
+				EED890801F7A970100300AF9 /* ServiceAssembly */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		EED890651F7A713B00300AF9 /* Deserializer */ = {
+			isa = PBXGroup;
+			children = (
+				EED890661F7A717800300AF9 /* Deserializer.swift */,
+				EED890681F7A71A300300AF9 /* JSONDeserializer.swift */,
+			);
+			name = Deserializer;
+			sourceTree = "<group>";
+		};
+		EED8906C1F7A739F00300AF9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EED8906D1F7A73BE00300AF9 /* Repository.swift */,
+				EED8906F1F7A75C000300AF9 /* NetworkRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		EED890731F7A8B6B00300AF9 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EED890741F7A8B7C00300AF9 /* Request.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		EED890761F7A8EF100300AF9 /* Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				EED890771F7A8F4B00300AF9 /* Scheduler.swift */,
+				EED890791F7A8F6300300AF9 /* GCDScheduler.swift */,
+			);
+			name = Scheduler;
+			sourceTree = "<group>";
+		};
+		EED8907B1F7A903C00300AF9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EED8907C1F7A908800300AF9 /* ServiceLayer.swift */,
+				EED8907E1F7A961900300AF9 /* Service.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		EED890801F7A970100300AF9 /* ServiceAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				EED890811F7A973B00300AF9 /* ServiceAssembly.swift */,
+			);
+			name = ServiceAssembly;
+			sourceTree = "<group>";
+		};
+		EED890831F7A975000300AF9 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				EED890841F7A976C00300AF9 /* Transport.swift */,
+				EED890861F7A979700300AF9 /* AlamofireTransport.swift */,
+			);
+			name = Transport;
 			sourceTree = "<group>";
 		};
 		FB5CE1486A418262B23598A8 /* Pods */ = {
@@ -417,20 +534,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED890601F79A9A800300AF9 /* SegueHandler.swift in Sources */,
+				EED890821F7A973B00300AF9 /* ServiceAssembly.swift in Sources */,
+				EED890781F7A8F4B00300AF9 /* Scheduler.swift in Sources */,
 				EE937C3D1F796685004E8C48 /* ColoredTextButton.swift in Sources */,
+				EED890851F7A976C00300AF9 /* Transport.swift in Sources */,
 				EED890481F79836400300AF9 /* UIView+Autolayout.swift in Sources */,
+				EED890701F7A75C000300AF9 /* NetworkRepository.swift in Sources */,
 				EE937C401F796709004E8C48 /* UIImage+ResizableImage.swift in Sources */,
 				EE937C171F786E64004E8C48 /* ViewController.swift in Sources */,
 				EE937C0F1F786CF5004E8C48 /* AppDelegate.swift in Sources */,
+				EED890641F79AD5900300AF9 /* Result.swift in Sources */,
+				EED890671F7A717800300AF9 /* Deserializer.swift in Sources */,
+				EED890691F7A71A300300AF9 /* JSONDeserializer.swift in Sources */,
 				EE937C321F79623D004E8C48 /* Color.swift in Sources */,
 				EE937C3A1F796663004E8C48 /* ErrorViewLabel.swift in Sources */,
+				EED8907F1F7A961900300AF9 /* Service.swift in Sources */,
+				EED8906E1F7A73BE00300AF9 /* Repository.swift in Sources */,
 				EED8905D1F79A8F300300AF9 /* RobotViewController.swift in Sources */,
 				EED8904B1F799A4800300AF9 /* Strings.swift in Sources */,
+				EED8906B1F7A726100300AF9 /* AppError.swift in Sources */,
+				EED890871F7A979700300AF9 /* AlamofireTransport.swift in Sources */,
+				EED890751F7A8B7C00300AF9 /* Request.swift in Sources */,
 				EE937C341F79635D004E8C48 /* Font.swift in Sources */,
 				EED8905B1F79A8DE00300AF9 /* RobotView.swift in Sources */,
+				EED8907A1F7A8F6300300AF9 /* GCDScheduler.swift in Sources */,
+				EED890721F7A7ACD00300AF9 /* Dictionary+Mapping.swift in Sources */,
 				EE937C271F795EC9004E8C48 /* View.swift in Sources */,
 				EED890591F79A7DD00300AF9 /* AppearanceInitializer.swift in Sources */,
 				EED890571F79A27F00300AF9 /* RobotsViewController.swift in Sources */,
+				EED8907D1F7A908800300AF9 /* ServiceLayer.swift in Sources */,
 				EE937C421F796765004E8C48 /* GreenTextButton.swift in Sources */,
 				EED890551F799E4500300AF9 /* RobotsView.swift in Sources */,
 				EE937C3B1F796663004E8C48 /* Label.swift in Sources */,

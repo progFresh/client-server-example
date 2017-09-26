@@ -18,7 +18,7 @@ class RobotsViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "title"
+        title = .RobotsTitle
         setupRootView()
         self.performSegue(with: .showRobot, sender: nil)
     }
