@@ -17,6 +17,8 @@ class RobotCell: UICollectionViewCell {
     // MARK: Private helpers
 
     func configure(with robot: Robot) {
+        imageView.layer.borderColor = Color.black.cgColor
+        imageView.layer.borderWidth = CGFloat(1)
         imageView.setImage(withURL: robot.photo)
     }
 }
