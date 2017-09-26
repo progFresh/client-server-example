@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,23 +56,69 @@
             </objects>
             <point key="canvasLocation" x="972" y="38.23088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--Robot View Controller-->
         <scene sceneID="1j5-De-wsd">
             <objects>
-                <viewController id="nAB-Ee-BpN" sceneMemberID="viewController">
+                <viewController id="nAB-Ee-BpN" customClass="RobotViewController" customModule="Robots" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gmi-U3-IOS"/>
                         <viewControllerLayoutGuide type="bottom" id="JpB-gc-Dr4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6Y8-5n-xsV">
+                    <view key="view" contentMode="scaleToFill" id="6Y8-5n-xsV" customClass="RobotView" customModule="Robots" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mv-ls-buV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVQ-5U-N24" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b0f-v2-yHu">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="347"/>
+                                                <color key="backgroundColor" red="0.40000000000000002" green="1" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="b0f-v2-yHu" secondAttribute="height" multiplier="375:347" id="GIq-or-hIv"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="b0f-v2-yHu" firstAttribute="top" secondItem="ZVQ-5U-N24" secondAttribute="top" id="40B-Xw-Oft"/>
+                                            <constraint firstAttribute="trailing" secondItem="b0f-v2-yHu" secondAttribute="trailing" id="LeK-Ab-acf"/>
+                                            <constraint firstItem="b0f-v2-yHu" firstAttribute="leading" secondItem="ZVQ-5U-N24" secondAttribute="leading" id="eCq-u1-wHY"/>
+                                            <constraint firstAttribute="bottom" secondItem="b0f-v2-yHu" secondAttribute="bottom" constant="320" id="wwX-xJ-2cg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZVQ-5U-N24" firstAttribute="top" secondItem="2mv-ls-buV" secondAttribute="top" id="53U-jC-hCm"/>
+                                    <constraint firstItem="ZVQ-5U-N24" firstAttribute="leading" secondItem="2mv-ls-buV" secondAttribute="leading" id="Zau-SQ-vPS"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZVQ-5U-N24" secondAttribute="bottom" id="cs2-Av-w5P"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZVQ-5U-N24" secondAttribute="trailing" id="et3-EQ-AKa"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2mv-ls-buV" firstAttribute="centerY" secondItem="6Y8-5n-xsV" secondAttribute="centerY" id="JxY-ps-FsC"/>
+                            <constraint firstItem="2mv-ls-buV" firstAttribute="width" secondItem="6Y8-5n-xsV" secondAttribute="width" id="KTO-rL-YeO"/>
+                            <constraint firstItem="ZVQ-5U-N24" firstAttribute="width" secondItem="6Y8-5n-xsV" secondAttribute="width" id="RZd-uI-8Vu"/>
+                            <constraint firstItem="2mv-ls-buV" firstAttribute="height" secondItem="6Y8-5n-xsV" secondAttribute="height" id="gQA-so-vUw"/>
+                            <constraint firstItem="2mv-ls-buV" firstAttribute="centerX" secondItem="6Y8-5n-xsV" secondAttribute="centerX" id="si9-04-7aQ"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="imageView" destination="b0f-v2-yHu" id="D7M-IT-MJb"/>
+                            <outlet property="scrollView" destination="2mv-ls-buV" id="bwD-hL-2Uu"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="rootView" destination="6Y8-5n-xsV" id="NLO-Ku-eVW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3CJ-pH-vb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="38"/>
+            <point key="canvasLocation" x="1733.5999999999999" y="37.331334332833585"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2jB-8c-scx">
